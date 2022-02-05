@@ -75,7 +75,7 @@ app.post('/',(req,res)=>{
     let location = req.body.loc
 
 
-    let url = 'https://api.openweathermap.org/data/2.5/weather?q='+location+'&appid=9fb11e9336af6f2b7dc6aff53baabe4b&units=metric'
+    let url = 'https://api.openweathermap.org/data/2.5/weather?q='+location+'&[API-key]&units=metric'
 
     const today = new Date()
     const options = {
