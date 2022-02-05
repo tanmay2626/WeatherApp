@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #11324D;
+} 
+h1,h4{
+    color: white;
+}
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+h2,h3{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+}
+
+.navi{
+    height: 100px;
+}
+.heading{
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    color: #191A19;
+    font-weight: 600;
+    padding-left: 50px;
+}
+.navi-menu{
+    text-align: right;
+    justify-content: right;
+}
+.nav-item{
+    margin-top: 15px;
+    padding-right: 20px;
+}
+.search-my{
+    margin-top: 30px;
+    height: 50px;
+}
+.btn-my{
+    margin-top: 30px;
+    height: 50px;
+}
+
+.body-bg{
+    height: 100vh;
+    background-image: linear-gradient(#22577E,#84DFFF);
+}
+.head-box{
+    margin-top: 180px;
+    height: 200px;
+    padding-left: 80px;
+}
+.city{
+    font-size: 5rem;
+}
+.date{
+    font-size: 2rem;
+}
+.weather-img{
+    height: 170px;
+}
+.side{
+    height: 700px;
+}
+.icons{
+    justify-content: left;
+}
+.r{
+    text-align: center;
+    width: 700px;
+}
+.temp-txt{
+    padding-top: 50px;
+    font-size: 7rem;
+}
+.info-box{
+    height: 500px;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+.info{
+    width: 300px;
+    margin-left: 150px;
+}
+.des{
+    color: white;
+    font-size: 3rem;
+}
+.value{
+    font-size: 1.6rem;
+}
+.w-icon{
+    height: 60px;
+}
+.w-info{
+    padding-top: 30px;
+}
+.img{
+    margin-top: 50px;
+    height: 300px;
+}
+.footer{
+    text-align: center;
+}
+.page{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+

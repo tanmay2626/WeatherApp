@@ -1,0 +1,113 @@
+<%- include('partials/header') -%>
+
+ 
+
+    <!-- Mains -->
+
+    <div class="container-fluid body-bg">
+
+         <!-- Navigation  -->
+    <nav class="navbar navbar-expand-lg navbar-light navi">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><h1 class="heading">Weather Forecast</h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto navi-menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <h2>Today</h2></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><h2>Tomorrow</h2></a>
+            </li>
+            <form class="d-flex" method="post" action="/">
+              <input class="form-control me-2 search-my" name="loc" type="search" placeholder="Location" aria-label="Search">
+              <button class="btn btn-outline-light btn-my" type="submit">Search</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+      <div class="row">
+        <div class="col col-lg-6 side">
+          <div class="head-box row">
+            <div class="col col-lg-7 text">
+              <h1 class="city"><%= location %> </h1>
+              <h4 class="date"><%= day %> </h4>
+            </div>
+            <div class="col col-lg-5 icons">
+              <img
+                class="weather-img"
+                src="<%= iconLink %> "
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-6 side r">
+          <div class="temp">
+            <h1 class="temp-txt"><%= temp %> <span>°C</span></h1>
+            <h2 class="des"><%= des %> </h2>
+          </div>
+
+          <div class="info">
+            <div class="row w-info">
+              <div class="col col-lg-6">
+                <img
+                  class="w-icon"
+                  src="\images\prep.png"
+                  alt=""
+                />
+              </div>
+              <div class="col col-lg-6">
+                <h2 class="des"><%= prep %></h2>
+              </div>
+            </div>
+            <div class="row w-info">
+              <div class="col col-lg-6">
+                <img
+                  class="w-icon"
+                  src="\images\humid.png"
+                  alt=""
+                />
+              </div>
+              <div class="col col-lg-6">
+                <h2 class="des"><%= humid %> </h2>
+              </div>
+            </div>
+            <div class="row w-info">
+              <div class="col col-lg-6">
+                <img
+                  class="w-icon"
+                  src="\images\wind.png"
+                  alt=""
+                />
+              </div>
+              <div class="col col-lg-6">
+                <h2 class="des"><%= wind %> </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("partials/footer") -%>
